@@ -1,0 +1,221 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  min-width: 320px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  background-color: #f3f3f3;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.title {
+  text-align: center;
+}
+
+/*-----------comments----------*/
+.comments {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.comments form {
+  margin-top: 40px;
+}
+
+nav {
+  margin-top: 40px;
+}
+
+.breadcrumb-item {
+  font-weight: bold;
+}
+
+.breadcrumb-item.active {
+  opacity: 0.5;
+}
+
+.breadcrumb-item a {
+  color: #6c757d;
+  text-decoration: none;
+}
+
+.breadcrumb-item a:hover,
+.breadcrumb-item a:focus {
+  opacity: 0.5;
+}
+
+legend {
+  padding: 5px 0 0 15px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 300px;
+  border: 1px solid #ccc;
+  background-color: #c0fcfc;
+}
+
+.sum {
+  margin-left: 10px;
+}
+
+.commentForm {
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  border: 1px solid #ccc;
+}
+
+.comments button {
+  margin-top: 20px;
+}
+
+.title-mess {
+  margin-top: 20px;
+}
+
+.message {
+  padding: 10px;
+  margin-left: 4rem;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+.message p {
+  margin: 0;
+}
+
+.text-weight {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.data {
+  font-size: 14px;
+}
+
+.card-header {
+  padding: 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header--left {
+    margin-left: 10px;
+}
+
+.text-remove a {
+  margin-right: 10px;
+  text-decoration: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #df7676;
+}
+
+.text-remove a:hover,
+.text-remove a:focus {
+  color: #e60d0d;
+}
+
+.card-body {
+  font-size: 16px;
+  color: #000;
+}
+
+.wrapper {
+  margin-top: 20px;
+  margin-left: 4rem;
+  padding: 0;
+  /* overflow: auto;
+  height: 790px; */
+  /*box-shadow: 3px 3px 15px 3px #ccc;*/
+}
+
+.wrapper-form {
+  margin-top: 30px;
+}
+
+.form-item span {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.form-file {
+  padding-left: 20px;
+}
+
+.form-file--item label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #666;
+}
+
+.card-image {
+  float: left;
+}
+
+.card-image {
+  margin-top: 14px;
+}
+
+.card-image img {
+  width: 50px;
+  height: auto;
+}
+
+.form-item a {
+  position: relative;
+  top: 1px;
+  left: 10px;
+  text-decoration: none;
+  font-size: 24px;
+  color: red;
+}
+
+.form-file--item .get-end {
+  position: relative;
+  top: 3px;
+  left: 10px;
+  text-decoration: none;
+  font-size: 24px;
+  color: red;
+}
+
+.nameErroy {
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.form-file--item .imag-no {
+  margin-left: 5px;
+  font-size: 18px;
+}
