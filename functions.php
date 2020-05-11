@@ -21,11 +21,3 @@ function include_template($path, $data)
 
     return ob_get_clean();
 }
-// функция для экранирования апострофов
-function clear()
-{
-    global $db;
-    foreach ($_POST as $key => $value) {
-        $_POST[$key] = mysqli_real_escape_string($db, $value);
-    }
-}
