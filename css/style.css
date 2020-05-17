@@ -219,3 +219,14 @@ legend {
   margin-left: 5px;
   font-size: 18px;
 }
+
+/* admin   */
+table {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.remove i:hover,
+.remove i:focus {
+  color: red;
+}

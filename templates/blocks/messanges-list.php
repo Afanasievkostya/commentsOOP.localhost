@@ -15,14 +15,6 @@
             <p class="text-weight"><?= nl2br(htmlspecialchars($messange['name_user'])); ?></p>
             <p class="text-weight data"><?= $messange['data']; ?></p>
            </div>
-            <div class="text-remove">
-              <?php
-                $key_mess = $messange['id'];
-                if (base64_decode(@$_GET['name']) == 'admin') {
-                   echo '<a href="?delete='.$key_mess.'">Удалить</a>';
-                }
-             ?>
-            </div>
          </div>
          <div class="card-body">
             <?= nl2br(htmlspecialchars($messange['comment'])); ?>

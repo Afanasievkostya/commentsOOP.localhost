@@ -2,6 +2,7 @@
 
 // Класс сущности страницы входа для комментаий.
 require_once 'Database.php';
+require_once 'mysql_helper.php';
 
 class Entrance extends Database
 {

@@ -5,11 +5,11 @@ error_reporting(-1);
 require_once 'functions.php';
 require_once 'models/Entrance.php';
 
+// создаём объект
 $entrance = new Entrance();
 
 if (!empty($_GET)) {
-
-  // записываем в переменную значение get
+    // записываем в переменную значение get
     $stok = $_GET['name'];
     // шифрование имени
     $stok = base64_encode($stok);
@@ -19,6 +19,7 @@ if (!empty($_GET)) {
     $users_name = array_column($users, 'name');
     // проверяем существует ли в массиве имя
     $name = in_array($stok, $users_name, true);
+
     // выбираем массив с именем зарегистрированным пользователем
     $pas = $entrance->search_pas($stok);
 
@@ -29,11 +30,16 @@ if (!empty($_GET)) {
         // проверяем пароль пользователя с введённым, если не совподает, то
         $password_user_erroy =  '<p class="nameErroy" style="font-size: 18px; color: red;">Не верный пароль</p>';
         $end_password = '<a href="entrance.php" class="end-user">&times;</a>';
+    } elseif (base64_decode($stok) == 'admin' && password_verify($_GET['password'], $pas['password'])) {
+        header("Location: admin.php?name={$stok}");
+        exit;
     } else {
         header("Location: index.php?name={$stok}");
         exit;
     }
 }
+
+///////////////////////////////////////////////////////////////////////////////
 
 $page_content = include_template('templates/entrance.php', [
     'name_user_erroy' => @$name_user_erroy,

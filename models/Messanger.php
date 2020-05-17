@@ -5,14 +5,10 @@ require_once 'Database.php';
 
 class Messanger extends Database
 {
-    //public $messanges;
-    //public $sum;
-
-    // метод выбора кол-во комментариев
+    // метод выбора всех комментариев
     public function get_sum()
     {
         $db = $this->connect();
-
         $query = "SELECT * FROM messanges ORDER BY id DESC";
         $res = mysqli_query($db, $query);
 
@@ -23,7 +19,6 @@ class Messanger extends Database
     public function get_mess()
     {
         $db = $this->connect();
-
         $query = "SELECT * FROM messanges ORDER BY id DESC LIMIT 20";
         $res = mysqli_query($db, $query);
 

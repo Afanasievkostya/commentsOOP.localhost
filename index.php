@@ -5,6 +5,7 @@ error_reporting(-1);
 require_once 'functions.php';
 require_once 'models/Messanger.php';
 
+// создаём объект
 $messanger = new Messanger();
 
 // записываем в переменную значение $_REQUEST
@@ -21,6 +22,8 @@ $messanger = new Messanger();
     $sum = $messanger->get_sum();
     $sum = count($sum);
 
+    //////////////////////////////////////////////////////////////////////
+
     if (!empty($_GET)) {
         if (!$name) {
             $erroy_user = '<p style="font-size: 18px; color: red;">Не санкционированный вход. Отказ в допуске!</p>';
@@ -30,6 +33,8 @@ $messanger = new Messanger();
             $submit_comm = '<button type="submit" class="btn btn-success">Отправить</button>';
         }
     }
+
+    /////////////////////////////////////////////////////////////////////////
 
     if (!empty($_POST)) {
         // находим ключ активного элемента массива $users
@@ -45,6 +50,8 @@ $messanger = new Messanger();
         header("Location: index.php?name={$stok}");
         exit;
     }
+
+    ///////////////////////////////////////////////////////////////////////////
 
 $page_content = include_template('templates/index.php', [
 'sum' => $sum,

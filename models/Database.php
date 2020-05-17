@@ -2,8 +2,6 @@
 // Класс отвечающий за соединения с базой данных.
 class Database
 {
-    public $db;
-
     public function connect()
     {
         //header("Content-type: text/html; charset=utf-8");
