@@ -6,7 +6,7 @@
       </ol>
 </nav>
 <!--Блок формы комментарий-->
-<form  action="" method="post" class="needs-validation" novalidate>
+<form  action="" method="post" class="needs-validation" novalidate id="submit1">
    <fieldset class="commentForm">
       <legend>
          <p class="title-sum">Комментарии</p>

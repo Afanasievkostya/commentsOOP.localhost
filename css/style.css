@@ -230,3 +230,82 @@ table {
 .remove i:focus {
   color: red;
 }
+
+.page-comment {
+  border-bottom: 1px solid #ccc;
+}
+
+/* answer */
+
+.answer {
+  margin-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.answer-on {
+  font-weight: bold;
+  color: #333;
+}
+
+.answer-on:hover {
+  text-decoration: none;
+  color: #ccc;
+}
+
+.answer-submit {
+  font-size: 25px;
+  color: #666;
+  border: none;
+  background: none;
+}
+
+.answer-submit i:hover {
+  opacity: 0.5;
+}
+
+/* answers*/
+
+.answers {
+  margin-left: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.card-body-answers {
+  max-height: 700px;
+  overflow: auto;
+}
+
+.answers-on {
+  font-weight: bold;
+  color: #333;
+}
+
+.answers-on:hover {
+  text-decoration: none;
+  color: #ccc;
+}
+
+.answers-on span {
+  margin-right: 10px;
+  color: #000;
+  font-size: 20px;
+}
+
+.answers-wrapper {
+
+}
+
+.answers-image {
+  margin: 0;
+  margin-right: 5px;
+
+}
+
+.answers-header {
+}
+
+.answers-comment {
+
+}

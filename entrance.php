@@ -15,11 +15,8 @@ if (!empty($_GET)) {
     $stok = base64_encode($stok);
     // получаем массив зарегистрированных пользователей
     $users = $entrance->search_user();
-    // возращаем массив из знач. name массива $users
-    $users_name = array_column($users, 'name');
-    // проверяем существует ли в массиве имя
-    $name = in_array($stok, $users_name, true);
-
+   // получаем имя пользователя.
+    $name = checkUser($users, $stok);
     // выбираем массив с именем зарегистрированным пользователем
     $pas = $entrance->search_pas($stok);
 
