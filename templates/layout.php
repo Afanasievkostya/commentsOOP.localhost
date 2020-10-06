@@ -22,7 +22,7 @@
                   <?= @$text; ?>
                   <?= $content; ?>
                </div>
-               <?= @$messanges_list; ?>
+               
             </section>
          </div>
       <!-- Optional JavaScript -->

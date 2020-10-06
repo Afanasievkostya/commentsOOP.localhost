@@ -150,8 +150,12 @@ legend {
   color: #000;
 }
 
+.displayComments {
+  padding-top: 20px;
+}
+
 .wrapper {
-  margin-top: 20px;
+  margin-top: 40px;
   margin-left: 4rem;
   padding: 0;
   /* overflow: auto;

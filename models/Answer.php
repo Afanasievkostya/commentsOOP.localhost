@@ -7,7 +7,6 @@ require_once 'Database.php';
 
 class Answer extends Database
 {
-
   // метод для экранирования апострофов
     public function clear()
     {

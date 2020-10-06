@@ -1,3 +1,4 @@
+<div class="navbar">
 <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
          <li class="breadcrumb-item"><a href="index.php">Комментарии</a></li>
@@ -5,6 +6,7 @@
          <li class="breadcrumb-item active" aria-current="page">Вход</li>
       </ol>
 </nav>
+</div>
 <div class="wrapper-form animated bounce">
 <form action="" method="get" class="needs-validation" novalidate>
    <div class="form-row">

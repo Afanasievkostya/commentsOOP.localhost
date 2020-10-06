@@ -57,7 +57,7 @@ $answer = new Answer();
         $_POST['users_id'] = $users[$_POST['id']]['id'];
         $_POST['name_user'] = base64_decode($stok);
         $_POST['image_user'] = $users[$_POST['id']]['image'];
-        
+
         // записываем данные в БД
         $messanger->save_mess();
       }
@@ -88,23 +88,18 @@ $page_content = include_template('templates/index.php', [
 'name_user' => @$name_user,
 'submit_comm' => @$submit_comm,
 'erroy_user' => @$erroy_user,
-'end_user' => @$end_use
+'end_user' => @$end_use,
+'messanges' => $messanges,
+'answers' => $answers,
+'ans' => @$ans,
+'sum_answer' => $sum_answer
 ]);
-
-
-$messanges_list = include_template('templates/blocks/messanges-list.php', [
-    'messanges' => $messanges,
-    'answers' => $answers,
-    'ans' => @$ans,
-    'sum_answer' => $sum_answer
-  ]);
 
 
 $layout_content = include_template('templates/layout.php', [
     'title' => 'Комментарии',
     'pagetitle' => 'Комментарии',
-    'content' => $page_content,
-    'messanges_list' => $messanges_list
+    'content' => $page_content
 ]);
 
 print($layout_content);
